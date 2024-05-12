@@ -11,5 +11,14 @@ config_version=5
 [application]
 
 config/name="Jeuinchalla"
+run/main_scene="res://scenes/test.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[custom]
+
+playerspeed=10.0
+
+[physics]
+
+2d/default_gravity_vector=Vector2(0.095, 1)

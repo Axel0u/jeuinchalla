@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ycn72kcos4sq"]
+
+[ext_resource type="Script" path="res://scripts/persomouvement.gd" id="1_qluwi"]
+[ext_resource type="Texture2D" uid="uid://c0wgayxuldeif" path="res://sprites/Perso test.png" id="1_qv0qi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_epua4"]
+radius = 7.0
+height = 22.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_qluwi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_epua4")
+
+[node name="PersoTest" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(0, -2)
+texture = ExtResource("1_qv0qi")
